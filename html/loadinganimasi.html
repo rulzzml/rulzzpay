@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Loading</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            background: #3498db;
+        }
+        .isi{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .sampul{
+            position: absolute;
+            top: -35px;
+            transform: scale(1.5);
+        }
+        .loading{
+            height: 25px;
+            width: 1px;
+            position: absolute;
+            animation: rotate 3.5s linear infinite;
+        }
+        .loading .lingkarankecil{
+            top: 30px;
+            height: 7px;
+            width: 7px;
+            background: #fff;
+            border-radius: 50%;
+            position: relative;
+        }
+        .teks{
+            position: absolute;
+            bottom: -85px;
+            font-size: 25px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+        @keyframes rotate{
+            30%{
+                transform: rotate(220deg);
+            }
+            40%{
+                transform: rotate(450deg);
+                opacity: 1;
+            }
+            75%{
+                transform: rotate(720deg);
+                opacity: 1;
+            }
+            76%{
+                opacity: 0;
+            }
+            100%{
+                transform: rotate(0deg);
+                opacity: 0;
+            }
+        }
+        .loading:nth-child(1){
+            animation-delay: 0.15s;
+        }
+        .loading:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        .loading:nth-child(3){
+            animation-delay: 0.45s;
+        }
+        .loading:nth-child(4){
+            animation-delay: 0.6s;
+        }
+        .loading:nth-child(5){
+            animation-delay: 0.75s;
+        }
+        .loading:nth-child(6){
+            animation-delay: 0.9s;
+        }
+        a{}
+    </style>
+</head>
+<body>
+    <div class="isi">
+        <div class="sampul">
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+            <div class="loading">
+                <div class="lingkarankecil"></div>
+            </div>
+        </div>
+        <div class="teks">Silahkan Tunggu</div>
+        <a href="./index.html">Lewati Loading</a>
+    </div>
+</body>
+</html>

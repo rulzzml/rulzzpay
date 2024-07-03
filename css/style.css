@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+span{
+    color: blue;
+}
+
+/* Deskripsi */
+.deskripsi h1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 15%;
+}
+.saldo{
+    width: 100%;
+    height: 90px;
+    background-color: #9d9db6e7;
+    border-radius: 16px;
+    border-color: black;
+}
+.saldo .rpay{
+    font-size: 35px;
+    float: left;
+    line-height: 85px;
+    margin-left: 2rem;
+}
+.saldo h3{
+    float: right;
+    line-height: 50px;
+    font-size: 23px;
+    margin-right: 1rem;
+}
+.saldo h4{
+    float: right;
+    font-size: 20px;
+    color: black;
+    margin-right: -15rem;
+    text-decoration: underline;
+    line-height: 125px;
+}
+.saldo h5{
+    float: right;
+    font-size: 20px;
+    color: black;
+    margin-right: -15rem;
+    text-decoration: underline;
+    margin-right: -5rem;
+    line-height: 125px;
+}
+
+
+/* box paket data all operator */
+
+.wrapper{
+    display: inline-flex;
+}
+.container h2{
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.box_img img{
+    width: 165px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 8px;
+    border-radius: 90px;
+}
+.indosat h1{
+    margin-left: 1.5rem;
+    margin-top: -0.1rem;
+}
+.telkomsel h1{
+    margin-left: 0.2rem;
+}
+.xl h1{
+    margin-left: 4.3rem;
+}
+.axis h1{
+    margin-left: 3.2rem;
+}
+.tri h1{
+    margin-left: 2.6rem;
+}
+.indosat h1:hover,
+.telkomsel h1:hover,
+.xl h1:hover,
+.smartfren h1:hover,
+.tri h1:hover,
+.fa-solid:hover,
+.fa-brands:hover{
+    color: blue;
+}
+.box_img{
+    border: 1px solid black;
+    width: 175px;
+    height: 180px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.box_img:hover{
+    border: 3px solid blue;
+}
+.box_img a{
+    color: black;
+}
+.fa-solid,
+.fa-brands{
+    font-size: 20px;
+    margin-left: 2.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px){
+    .deskripsi h1{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .saldo{
+        width: 100%;
+        height: 90px;
+        background-color: #9d9db6e7;
+        border-radius: 16px;
+        border-color: black;
+        z-index: 999;
+    }
+    .saldo .rpay{
+        font-size: 25px;
+        float: left;
+        line-height: 85px;
+        margin-left: 0.3rem;
+    }
+    .saldo h3{
+        float: right;
+        line-height: 50px;
+        font-size: 18px;
+        margin-right: 1rem;
+    }
+    .saldo h4{
+        float: right;
+        font-size: 17px;
+        color: black;
+        margin-right: -12rem;
+        text-decoration: underline;
+        line-height: 125px;
+    }
+    .saldo h5{
+        float: right;
+        font-size: 17px;
+        color: black;
+        margin-right: -15rem;
+        text-decoration: underline;
+        margin-right: -5rem;
+        line-height: 125px;
+    }
+}
+@media screen and (max-width: 800px){}
